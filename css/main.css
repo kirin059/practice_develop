@@ -1,0 +1,310 @@
+@import url("reset.css");
+
+/* 
+Layout 속성 (position, float, clear, display) 포지션-디스플레이
+Box Model 속성 (width, height, margin, padding)
+Visual 속성 (color, background, border, box-shadow) 컬러-선-그림자
+Typography 속성 (font-size, font-family, text-align, text-transform) 글자: 사이즈-글씨체-정렬
+Misc 속성 (cursor, overflow, z-index) 
+*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* nav bar */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 54px;
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 975px;
+    width: 100%;
+    height: 54px;
+}
+
+h1 {
+    padding: 10px;
+    background-color: var(--bg-white);
+    text-align: left;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.search {
+    position: relative;
+}
+
+.searchText {
+    width: 215px;
+    height: 28px;
+    background-color: var(--bg-grey);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    cursor: text;
+}
+
+.searchText::placeholder {
+    font-size: 90%;
+    text-align: center;
+}
+
+.glass {
+    position: absolute;
+    top: -2px;
+    left: 55px;
+    width: 45px;
+    opacity: 0.4;
+}
+
+.disabled {
+    display: none;
+}
+
+.navIcons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navIcons li img {
+    width: 25px;
+    margin-left: 22px;
+}
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 84px;
+    background-color: var(--bg-grey);
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-between;
+    max-width: 975px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+/* 메인 왼쪽 */
+.mainLeft {
+    display: flex;
+    flex-direction: column;
+    width: 615px;
+    background-color: var(--bg-grey);
+}
+
+.userList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 615px;
+    height: 87px;
+    margin-bottom: 24px;
+    padding: 16px 0;
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+
+.img {
+    padding: 3px;
+    width: 56px;
+    height: 56px;
+    border: 2px solid rgb(240, 54, 147);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* article */
+article {
+    display: flex;
+    flex-direction: column;
+    width: 615px;
+    height: 765px;
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-color);
+}
+
+.articleTop {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 60px;
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.articleTop img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+}
+
+.articleMiddle {
+    width: 615px;
+    height: 490px;
+}
+
+.articleMiddle img {
+    width: 100%;
+}
+
+/* 댓글 */
+.articleBottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.articleIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+}
+
+.iconsLeft {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    padding-left: 5px;
+}
+
+.iconsLeft li img,
+.iconsRight img {
+    width: 25px;
+    margin: 10px 8px 8px 8px;
+}
+
+.likeCount {
+    padding: 3px 0 10px 13px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.commentList {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 17px 10px;
+    height: 70px;
+}
+
+.commentList li {
+    padding: 0 0 3px 5px;
+}
+
+.cmt {
+    margin-left: 5px;
+}
+
+.commentWrite {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    border-top: 1px solid rgb(228 219 219);
+}
+
+.write {
+    width: 500px;
+    padding-left: 16px;
+    border: none;
+}
+
+.post {
+    margin-right: 20px;
+    background-color: var(--bg-white);
+    color: var(--color-lightblue);
+    font-weight: bold;
+}
+
+/* 메인 오른쪽 */
+.mainRight {
+    position: fixed;
+    right: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    background-color: var(--bg-grey);
+    border: 1px solid red;
+}
+
+.mainRightTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    height: 56px;
+    padding: 10px 5px 10px 5px;
+    margin: 20px 0 8px 0;
+}
+
+.mainRightTop img {
+    width: 60px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.name {
+    font-size: 15px;
+}
+
+.myProfile {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+}
+
+.change {
+    color: var(--color-lightblue);
+    font-weight: bold;
+}
+
+.recommend {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+    height: 20px;
+    padding: 0 10px;
+}
+
+.recommendTitle {
+    color: gray;
+    font-weight: bold;
+}
+
+.mainRightMiddle {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+
+.mainRightBottom {
+    display: flex;
+    width: 300px;
+    height: 106px;
+}
