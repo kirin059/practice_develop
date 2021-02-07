@@ -24,11 +24,31 @@ const pw = document.querySelector(".userPw");
 document.addEventListener("keyup", function () {
     if (id.value.includes("@") && pw.value.length > 5) {
         btn.classList.add("active");
+        btn.addEventListener("click", function () {
+            location.href = "main.html";
+        });
     } else {
         btn.classList.remove("active");
+        btn.removeEventListener("click", function () {
+            location.href = "main.html";
+        });
     }
 });
 
-btn.addEventListener("click", function () {
-    location.href = "calendar.html";
-});
+// clock
+const clock = document.querySelector(".clock");
+
+const getTime = () => {
+    const date = new Date();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+
+    clock.innerHTML = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+};
+
+const init = () => {
+    getTime();
+    setInterval(getTime, 1000);
+};
+init();
