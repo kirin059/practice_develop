@@ -26,6 +26,7 @@ nav {
     height: 54px;
     background-color: var(--bg-white);
     border: 1px solid var(--border-color);
+    z-index: 50;
 }
 
 .navContainer {
@@ -90,11 +91,13 @@ h1 {
 main {
     display: flex;
     justify-content: center;
+    width: 100%;
     padding-top: 84px;
     background-color: var(--bg-grey);
 }
 
 .mainBox {
+    position: relative;
     display: flex;
     justify-content: space-between;
     max-width: 975px;
@@ -240,13 +243,13 @@ article {
 
 /* 메인 오른쪽 */
 .mainRight {
-    position: fixed;
-    right: 275px;
+    position: absolute;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    height: 100%;
+    width: 330px;
+    height: 600px;
     background-color: var(--bg-grey);
     border: 1px solid red;
 }
@@ -255,27 +258,30 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 280px;
+    width: 320px;
     height: 56px;
     padding: 10px 5px 10px 5px;
     margin: 20px 0 8px 0;
 }
 
-.mainRightTop img {
-    width: 60px;
+.myProfile img {
+    width: 50px;
+    height: 50px;
     border: 1px solid var(--border-color);
     border-radius: 50%;
     cursor: pointer;
     margin-right: 10px;
 }
-.name {
-    font-size: 15px;
-}
 
 .myProfile {
     display: flex;
-    flex-direction: column;
     width: 160px;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .change {
@@ -286,7 +292,7 @@ article {
 .recommend {
     display: flex;
     justify-content: space-between;
-    width: 290px;
+    width: 320px;
     height: 20px;
     padding: 0 10px;
 }
@@ -298,13 +304,64 @@ article {
 
 .mainRightMiddle {
     display: flex;
-    flex-direction: column;
-    width: 300px;
+    justify-content: space-between;
+    width: 340px;
     height: 300px;
+}
+
+.recommendList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friendImg,
+.friendId,
+.follow {
+    display: flex;
+    flex-direction: column;
+}
+
+.img1 {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.friendId,
+.follow {
+    margin-top: 5px;
+}
+
+.friendId {
+    display: flex;
+    flex-direction: column;
+}
+
+.friendId .rcmId,
+.rcm {
+    height: 15px;
+}
+
+.rcmId,
+.rcm {
+    font-size: 10px;
+}
+
+.follow span {
+    margin: 10px;
+    height: 33px;
+    color: var(--color-lightblue);
+    font-weight: bold;
 }
 
 .mainRightBottom {
     display: flex;
-    width: 300px;
+    flex-direction: column;
+    width: 320px;
     height: 106px;
+    color: var(--border-color);
+    font-size: 13px;
 }
