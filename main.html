@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="describtion" content="website" />
+        <meta name="author" content="saebom" />
+        <title>Westagram</title>
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="../img/insta_favicon.ico" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- nav bar -->
+            <nav>
+                <div class="navContainer">
+                    <h1>Westagram</h1>
+                    <form class="search">
+                        <input class="searchText" type="text" placeholder="검색" />
+                        <img class="glass" src="../img/search_img.png" alt="search bar" />
+                    </form>
+                    <ul class="navIcons">
+                        <li><img src="../img/home_btn.jpg" alt="home button" /></li>
+                        <li><img src="../img/dm_btn.jpg" alt="direct message button" /></li>
+                        <li><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="Explore" /></li>
+                        <li><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="Like" /></li>
+                        <li><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="My page" /></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- main -->
+            <main>
+                <div class="mainBox">
+                    <div class="mainLeft">
+                        <ul class="userList">
+                            <li>
+                                <img class="img" src="../img/random_img.jpg" />
+                            </li>
+                            <li>
+                                <img class="img" src="../img/random_img.jpg" />
+                            </li>
+                            <li>
+                                <img class="img" src="../img/random_img.jpg" />
+                            </li>
+                            <li>
+                                <img class="img" src="../img/random_img.jpg" />
+                            </li>
+                            <li>
+                                <img class="img" src="../img/random_img.jpg" />
+                            </li>
+                            <li>
+                                <img class="img" src="../img/random_img.jpg" />
+                            </li>
+                        </ul>
+
+                        <!-- article -->
+                        <article>
+                            <section class="articleTop">
+                                <img src="../img/random_img.jpg" />
+                                <span class="id">thisIsId</span>
+                            </section>
+
+                            <section class="articleMiddle">
+                                <img src="../img/random_img.jpg" />
+                            </section>
+
+                            <section class="articleBottom">
+                                <div class="articleIcons">
+                                    <ul class="iconsLeft">
+                                        <li><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="Like" /></li>
+                                        <li><img src="../img/insta_chat.png" alt="comment" /></li>
+                                        <li><img src="../img/dm_btn.jpg" alt="direct message button" /></li>
+                                    </ul>
+                                    <div class="iconsRight">
+                                        <img src="../img/insta_colllection.png" alt="collection" />
+                                    </div>
+                                </div>
+                                <!-- 하트 누를때마다 .likeNum 의 갯수 늘어나는 기능 구현하기 -->
+                                <span class="likeCount">좋아요 <span class="likeNum">100</span>개</span>
+                                <ul class="commentList">
+                                    <div class="id ids">
+                                        <li>obama1101</li>
+                                        <li>greentea_5</li>
+                                        <li>gitAdd09</li>
+                                    </div>
+                                    <div class="cmt">
+                                        <li>so cute...</li>
+                                        <li>so cute...</li>
+                                        <li>so cute...</li>
+                                    </div>
+                                </ul>
+                                <div class="commentWrite">
+                                    <input class="write" type="text" placeholder="댓글 달기..." />
+                                    <button class="post">게시</button>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="mainRight">
+                        <div class="mainRightTop">   
+                            <div class="myProfile">
+                                <img src="../img/random_img.jpg" />
+                                <div class="profileInfo">
+                                    <span class="id">forth id</span>
+                                    <span class="name">saebom</span>
+                                </div>
+                            </div>
+                            <span class="change">전환</span>
+                        </div>
+
+                        <div class="recommend">
+                            <span class="recommendTitle">회원님을 위한 추천</span>
+                            <strong><span class="name">모두 보기</span></strong>
+                        </div>
+                        <div class="mainRightMiddle">
+                            <div class="recommendList">
+                                <div class="friendImg">
+                                    <img class="img1" src="../img/random_img.jpg" />
+                                    <img class="img1" src="../img/random_img.jpg" />
+                                    <img class="img1" src="../img/random_img.jpg" />
+                                    <img class="img1" src="../img/random_img.jpg" />
+                                    <img class="img1" src="../img/random_img.jpg" />
+                                </div>
+                                <div class="friendId">
+                                    <p class="rcmId"><strong>id1</strong><p class="rcm">회원님을 위한 추천</p></p>
+                                    <p class="rcmId"><strong>id1</strong><p class="rcm">회원님을 위한 추천</p></p>
+                                    <p class="rcmId"><strong>id1</strong><p class="rcm">회원님을 위한 추천</p></p>
+                                    <p class="rcmId"><strong>id1</strong><p class="rcm">회원님을 위한 추천</p></p>
+                                    <p class="rcmId"><strong>id1</strong><p class="rcm">회원님을 위한 추천</p></p>
+                                </div>
+                            </div>
+                            <div class="follow">
+                                <span>팔로우</span>
+                                <span>팔로우</span>
+                                <span>팔로우</span>
+                                <span>팔로우</span>
+                                <span>팔로우</span>
+                            </div>
+                        </div>
+                        <div class="mainRightBottom">
+                            <ul class="mainRightBottom">
+                                <li>소개.도움말.홍보 센터.API.채용 정보.</li>
+                                <li>개인정보처리방침.약관.위치.인기 계정.해시태그.언어</li>
+                            </ul>
+                            <div class="copyright">
+                                <span>한국어∨</span>
+                                <span>© 2020 Westagram from Facebook</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="../js/main.js"></script>
+    </body>
+</html>
