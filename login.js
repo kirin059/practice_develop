@@ -26,7 +26,3 @@ id.addEventListener("input", function (e) {
         id.classList.remove("error");
     }
 });
-
-btn.addEventListener("click", function () {
-    location.href = "calendar.html";
-});
