@@ -1,4 +1,5 @@
 @import url("reset.css");
+@import url("common.css");
 
 /* 
 Layout Properties (position, float, clear, display)
@@ -20,13 +21,13 @@ Misc Properties (cursor, overflow, z-index)
 }
 
 /* main - login area */
-main {
+/* main {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 682px;
-}
+} */
 
 .loginBox {
     display: flex;
@@ -58,6 +59,10 @@ h1 {
     background-color: var(--bg-white);
 }
 
+.userId:focus {
+    outline: 1px solid black;
+}
+
 .userId,
 .userPw {
     width: 268px;
@@ -85,6 +90,10 @@ h1 {
     color: var(--bg-white);
     background-color: var(--color-deepblue);
     border: none;
+}
+
+.error {
+    border: 2px solid red;
 }
 
 .or {
@@ -134,7 +143,7 @@ h1 {
 }
 
 /* footer - information area*/
-footer {
+/* footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,4 +169,4 @@ li {
     padding-top: 20px;
     color: grey;
     font-size: 13px;
-}
+} */

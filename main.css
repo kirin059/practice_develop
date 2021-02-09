@@ -210,6 +210,7 @@ article {
     align-items: center;
     padding: 0 10px 17px 10px;
     height: 70px;
+    overflow: hidden;
 }
 
 .commentList li {
@@ -363,4 +364,8 @@ article {
     height: 66px;
     color: var(--border-color);
     font-size: 13px;
+}
+
+.error {
+    border: 2px solid red;
 }
